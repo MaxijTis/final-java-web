@@ -2,6 +2,7 @@
 
 Este repositorio contiene la implementación del Trabajo Práctico Integrador para la Comisión 24121, correspondiente a la Pre-Entrega Integrador Front.
 <br/>
+
 **Descripción:**
 El objetivo de este proyecto es replicar la siguiente [página web](https://giselemilagros88.github.io/cac_movies_javaphp/) utilizando los conocimientos adquiridos hasta el momento en clase, ya sea mediante código nativo o utilizando Bootstrap. Es importante tener en cuenta que algunos participantes pueden haber elegido una temática diferente a la planteada, siempre y cuando se respete la estructura base.
 

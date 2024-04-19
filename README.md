@@ -8,5 +8,5 @@ El objetivo de este proyecto es replicar la siguiente [página web](https://gise
 **Entrega:**
 La entrega se realizará pegando el enlace donde esté alojado el trabajo. Se aceptan las siguientes alternativas:
 - GitHub Pages
--https://www.000webhost.com/ 
--O alguna herramienta que permita alojar el trabajo.
+- 000webhost
+- O alguna herramienta que permita alojar el trabajo.

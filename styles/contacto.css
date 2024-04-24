@@ -1,0 +1,19 @@
+
+body{
+    background-image: url("https://img.freepik.com/foto-gratis/composicion-telefono-rosa-vintage_23-2148913955.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.form-login{
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+}
+
+/* Titulos */
+.title-text{
+    font-size: 25px;
+    text-align: center;
+}

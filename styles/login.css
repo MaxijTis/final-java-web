@@ -1,0 +1,13 @@
+
+body{
+    background-image: url("https://img.freepik.com/fotos-premium/comercio-linea-tecnologia-marketing-moderna-carrito-supermercado-fondo-oscuro-ai-generado_868611-5804.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+.form-login{
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+}

@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+            <div class="container-fluid bg-transparent">
+                <a class="navbar-brand display-3" href="#">
                     <img alt="Logo" width="40" height="29" class="d-inline-block align-text-top"
-                        src="./assets/logo.jpeg">
+                        src="https://e7.pngegg.com/pngimages/653/775/png-clipart-product-shopping-cart-supermarket-logo-logo-super-mercado-angle-text-thumbnail.png">
                     Supermercado
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,6 +53,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Pedidos Online</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="form_contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -64,25 +67,68 @@
         </nav>
     </header>
     <main>
+        <div id="carouselExampleInterval" class="carousel carousel-container carousel-dark slide mb-3"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://hiperlibertad.vtexassets.com/assets/vtex.file-manager-graphql/images/bd434911-7fa4-491b-b5c8-47f039c17f38___1d01de1eac367ce4a88990cb3d58d8e7.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://hiperlibertad.vtexassets.com/assets/vtex.file-manager-graphql/images/831b7ce2-e762-4015-bc26-14edef1a52d8___d4cca1a86887628b37ff508cae22980c.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://hiperlibertad.vtexassets.com/assets/vtex.file-manager-graphql/images/8bd2203f-1fa9-4f4b-9fc4-67db60665eaa___2a0905f410d6cf7120bca9c5ac2a4c3a.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://hiperlibertad.vtexassets.com/assets/vtex.file-manager-graphql/images/a9f57741-3c4b-41b9-bedf-83195b48f81e___69471cee1a4e4041b1ead0e3b5b7f3af.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img src="https://hiperlibertad.vtexassets.com/assets/vtex.file-manager-graphql/images/0b20fd91-ecaf-40d7-9cda-18d66df89ce0___58c61dcf17b53f14c9630ca970114eed.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <section class="page_principal">
             <h1>Cerca tuyo siempre</h1>
             <h2>¡Las mejores ofertas para vos!</h2>
             <button type="button" class="btn btn-success btn-lg">Registrate</button>
         </section>
+        <hr>
         <section class="page_search">
-            <H1>¿En que podemos ayudarte?</H1>
-            <input type="text" aria-label="First name" class="form-control">
+            <h1>Buscar producto</h1>
+            <input type="text" aria-label="First name" placeholder="Ingrese el producto a buscar" class="form-control">
         </section>
         <hr>
-        <section>
-            <h1>Productos Seleccionados</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section class="container py-5">
+            <h1 class="display-2">Productos Seleccionados</h1>
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-1 g-4 py-5">
                 <div class="col">
                     <div class="card">
-                        <img src="./assets/bananas.jpg" class="card-img-top" alt="bananas">
+                        <img src="./assets/banana.jpg" class="card-img-top" alt="bananas">
                         <div class="card-body">
                             <h5 class="card-title">Bananas 1Kg</h5>
-                            <p class="card-text"><h4>$1980</h4></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod
+                                dolorum nihil sunt voluptatem quas pariatur veritatis dicta mollitia. Odit delectus hic
+                                commodi aut nihil? Itaque culpa tempore minima quisquam.</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$638,23</h3>
+                            <button class="btn btn-primary">
+                                <i class="bi bi-cart4"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +137,14 @@
                         <img src="./assets/cereales.jpeg" class="card-img-top" alt="cereales">
                         <div class="card-body">
                             <h5 class="card-title">Cereales 510grs</h5>
-                            <p class="card-text"><h4>$2950</h4></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quia
+                                mollitia culpa vero, illo esse dignissimos natus doloribus. Dolor velit tempore
+                                obcaecati error excepturi reiciendis dolorem ipsam, explicabo beatae dolore.</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$3038,23</h3>
+                            <button class="btn btn-primary">
+                                <i class="bi bi-cart4"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -100,7 +153,13 @@
                         <img src="./assets/desinfectante.jpg" class="card-img-top" alt="desinfectante">
                         <div class="card-body">
                             <h5 class="card-title">Desinfectante Fabuloso 1Lts</h5>
-                            <p class="card-text"><h4>$5400</h4></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                                repudiandae tenetur quibusdam perferendis ex quasi illum sequi? Ex corrupti sed
+                                obcaecati ab maiores dicta deserunt nam culpa, quibusdam laudantium quas?</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$2086,87</h3>
+                            <button class="btn btn-primary"><i class="bi bi-cart4"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +168,13 @@
                         <img src="./assets/donas.jpg" class="card-img-top" alt="donas">
                         <div class="card-body">
                             <h5 class="card-title">Donas x4unidades</h5>
-                            <p class="card-text"><h4>$3250</h4></p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, soluta
+                                quisquam! Incidunt perspiciatis, quisquam accusantium neque facere assumenda molestiae
+                                facilis aliquam veniam, quia enim dicta error. Dolores eaque laudantium placeat!</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$2030,53</h3>
+                            <button class="btn btn-primary"><i class="bi bi-cart4"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -118,7 +183,13 @@
                         <img src="./assets/picada.jpg" class="card-img-top" alt="picada">
                         <div class="card-body">
                             <h5 class="card-title">Picada Especial Ternera 1Kg</h5>
-                            <p class="card-text"><h4>$8132</h4></p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                voluptates saepe cumque molestiae delectus et eum fuga repellendus, quae sunt obcaecati
+                                ullam eius est quidem nulla quasi culpa recusandae illum.</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$6800,48</h3>
+                            <button class="btn btn-primary"><i class="bi bi-cart4"></i> Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -127,7 +198,13 @@
                         <img src="./assets/yogurt.jpg" class="card-img-top" alt="yogurt">
                         <div class="card-body">
                             <h5 class="card-title">Yogurt 1Lts</h5>
-                            <p class="card-text"><h4>$1350</h4></p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At dolorem
+                                eaque vitae, et fuga totam quasi veritatis ipsam temporibus atque magnam eum, assumenda
+                                facere repudiandae? Aperiam atque odit veritatis ex!</p>
+                        </div>
+                        <div class="mb-5 d-flex justify-content-around">
+                            <h3>$2800,21</h3>
+                            <button class="btn btn-primary"><i class="bi bi-cart4"></i> Buy Now</button>
                         </div>
                     </div>
                 </div>

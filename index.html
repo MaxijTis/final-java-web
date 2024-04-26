@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Supermercado</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
@@ -26,13 +26,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                            <a class="nav-link active" aria-current="page" href="#ofertas_semana">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Pedidos Online</a>
+                            <a class="nav-link diseable" aria-current="page" href="#">Pedidos Online</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="ofertas_semana">
             <h1>Ofertas de la Semana</h1>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -150,30 +150,9 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Enlaces</h3>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Contacto</h3>
-                    <p>Correo electrónico: info@example.com</p>
-                    <p>Teléfono: 123-456-7890</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Derechos de autor</h3>
-                    <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footerContainer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
 
 </html>

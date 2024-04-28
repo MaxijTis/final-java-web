@@ -5,12 +5,32 @@ html {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
 main{
   margin-bottom: 2rem;
 }
+
 body{
   background-color: #f8f4f4
 }
+
+.boton-subir {
+  position: fixed;
+  bottom: 1px;
+  right: 20px;
+  background-color: transparent;
+  color: #71f04b;
+  padding: 5px;
+  border-radius: 15%;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.boton-subir:hover {
+  opacity: 15;
+  color: green;
+}
+
 .carousel-inner{
     max-height: 300px;
     display: flex;

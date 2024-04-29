@@ -8,5 +8,5 @@ body{
     background-color: #ffff;
     border-radius: 10px;
     padding: 30px;
-    width: 500px;
+    width: max-content;
 }

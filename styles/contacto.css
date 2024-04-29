@@ -8,7 +8,7 @@ body{
     background-color: #ffff;
     border-radius: 10px;
     padding: 30px;
-    width: 500px;
+    width: fit-content;
 }
 /* Titulos */
 .title-text{

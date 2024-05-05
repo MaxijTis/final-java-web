@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+   
+}
+ main { 
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: auto; 
+     background-color: rgba(74, 69, 69, 0.906); 
+    /* background-image: url(superm/img2.jpeg);  */
+    /* padding: 45px;  */
+    /* background-color: rgba(66, 62, 62, 0.596); */
+    /* background-color: rgba(239, 8, 8, 0.112);
+    
+} */
+    
+  /* .form1{
+   
+   max-width: 1000px;
+   min-width: 320px; 
+   margin: 0 auto;
+   background-color: black;
+  
+ }     */
+ 
+   
+  
+  .form1{
+    display: flex; 
+     flex-direction: column; 
+    text-align: center; 
+     height: auto;
+     /* width: 75vw; */
+      max-width: 1000px;
+     min-width: 320px ; 
+      margin: auto; 
+
+
+}  
+    
+
+ 
+h2 {
+  
+   margin: 0; 
+    margin-bottom: 10px;
+   text-transform: uppercase;
+   font-weight: 100px;
+   font-size: 20px;
+   padding: 5px;
+   text-align: center;
+} 
+   
+
+   
+
+  .form-input {
+    font-size: 15px;
+    padding:  5 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+  }
+     /* margin-bottom: 15px;  */
+    /*  */
+/* }   */
+ fieldset  {
+   margin: 20px;
+    /* background-image: url(superm/img2.jpeg); 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;    */
+    padding: 0 50px; 
+   border-radius: 5%;
+   border: 3px solid;
+   text-align: center;
+   
+ }
+ 
+ .legend-registrate{
+   font-size: 20px;
+   padding: 2px;
+ }
+ 
+ 
+   
+
+
+input, textarea, select {
+   width: 85%;
+   /* padding: 6px 8px; */
+  
+   border: none;
+   border: 1px solid #666;
+   box-shadow: 0px 0px 15px #0003;
+    background-color: rgba(237, 231, 231, 0.219);
+   border-radius: 25px;
+   color: #c4e4d4;
+   cursor: pointer;
+    text-align: center; 
+ 
+   
+ 
+
+}  
+
+  
+label{
+   font-size: 0.99em;
+   line-height: ;
+   color: rgb(78, 3, 3);
+   font-weight: 800;
+  
+  
+   
+
+} 
+textarea  {
+   min-width: 100%;
+   resize: none;
+   min-height: 102px;
+   font-family: sans-serif;
+   font-size: content;
+   cursor: pointer;
+   
+} 
+ .checkbox{
+   width: auto;
+   height: 10px;   
+}
+   
+  .btn{
+    cursor: pointer;
+}
+/* @media (max-width: 800px){
+    .form-input{
+      display: flex;
+    }
+
+}
+@media (min-width: 400px) and (max-width 800px) {
+
+   .form-input{
+      display: flex;
+      background-color: chartreuse;
+   
+} */
+
+
+
+   
+ 
+  
+    
+

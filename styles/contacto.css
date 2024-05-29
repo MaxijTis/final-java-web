@@ -4,13 +4,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .form-login{
     background-color: #ffff;
     border-radius: 10px;
     padding: 30px;
     width: fit-content;
 }
-/* Titulos */
+
 .title-text{
     font-size: 25px;
     text-align: center;

@@ -1,5 +1,5 @@
 
-const loginForm = document.getElementById('login-form');
+const loginForm = document.getElementById('contacto-form');
 
 loginForm.addEventListener('submit', function(event) {
 
@@ -7,27 +7,34 @@ loginForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
     // Valores de los inputs
+    const name = loginForm.name.value;
     const email = loginForm.email.value;
-    const password = loginForm.password.value;
+    const message = loginForm.message.value;
     
     // Div de errores
+    const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
-    const passwordError = document.getElementById('passwordError');
+    const messageError = document.getElementById('messageError');
 
     // Reiniciar el texto 
+    nameError.textContent = '';
     emailError.textContent = '';
-    passwordError.textContent = '';
+    messageError.textContent = '';
     
     // Mostrar mensaje de error si los inputs están vacíos
+    if (name === '') {
+        nameError.textContent = 'El nombre es obligatorio.';
+    }
+
     if (email === '') {
         emailError.textContent = 'El correo electrónico es obligatorio.';
     }
-
-    if (password === '') {
-        passwordError.textContent = 'La contraseña es obligatoria.';
+    
+    if (message === '') {
+        messageError.textContent = 'Debes enviar un mensaje obligatorio.';
     }
 
-    if (email && password){
+    if (email && nameError && message){
         window.location.href = '../index.html';
     }
 

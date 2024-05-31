@@ -66,19 +66,22 @@
     </header>
     <div class="container mt-5 form-login">
         <p class="title-text">¡Dejanos un mensaje y nos pondremos en contacto contigo!</p>
-        <form>
+        <form id="contacto-form">
             <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name">
+                <div class="error" id="nameError"></div>
             </div>
             <div class="mb-3">
-                <label for="correo" class="form-label">Correo eléctronico</label>
-                <input type="email" class="form-control" id="correo">
+                <label class="form-label">Correo eléctronico</label>
+                <input type="email" class="form-control" id="email">
+                <div class="error" id="emailError"></div>
             </div>
             <div class="form-floating">
-                <textarea class="form-control" style="height: 100px;" placeholder="Dejanos tu mensaje!"
-                    id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Dejanos tu mensaje!</label>
+                <textarea id="message" class="form-control" style="height: 100px;"
+                    placeholder="Dejanos tu mensaje!"></textarea>
+                <label>Dejanos tu mensaje!</label>
+                <div class="error" id="messageError"></div>
             </div>
             <br>
             <button type="submit" class="btn btn-success">Enviar</button>
@@ -86,6 +89,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/contacto.js"></script>
 </body>
 
 </html>

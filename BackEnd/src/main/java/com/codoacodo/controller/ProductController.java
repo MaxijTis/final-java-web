@@ -1,0 +1,34 @@
+package com.codoacodo.controller;
+
+import com.codoacodo.entity.Product;
+import com.codoacodo.service.ProductService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/products")
+public class ProductController {
+
+    private final ProductService productService;
+
+    @GetMapping
+    public ResponseEntity<List<Product>> getProducts() {
+        return new ResponseEntity<>( productService.findAll(), HttpStatus.OK);
+    }
+
+    @PostMapping
+    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        return new ResponseEntity<>( productService.createProduct(product), HttpStatus.CREATED);
+    }
+
+    @DeleteMapping("/{productId}")
+    public ResponseEntity<Product> deleteProduct(@PathVariable Long productId) throws Exception {
+        return new ResponseEntity<>( productService.deleteProduct(productId), HttpStatus.OK);
+    }
+
+}

@@ -1,6 +1,7 @@
 package com.codoacodo.service;
 
-import com.codoacodo.entity.Product;
+import com.codoacodo.entity.ProductEntity;
+import com.codoacodo.exception.GenericException;
 import com.codoacodo.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,21 +15,21 @@ public class ProductService {
 
     private final ProductRepository productRepository;
 
-    public List<Product> findAll() {
+    public List<ProductEntity> findAll() {
         return productRepository.findAll();
     }
 
-    public Product createProduct(Product product) {
+    public ProductEntity createProduct(ProductEntity product) {
         return productRepository.save(product);
     }
 
-    public Product deleteProduct(Long productId) throws Exception {
-        Optional<Product> product = productRepository.findById(productId);
+    public ProductEntity deleteProduct(Long productId) {
+        Optional<ProductEntity> product = productRepository.findById(productId);
         if (product.isPresent()) {
             productRepository.deleteById(productId);
             return product.get();
         }
-        throw new Exception("No se encontró el producto");
+        throw new GenericException("No se encontró el producto");
     }
 
 }

@@ -11,46 +11,48 @@
   <main>
     <div class="form1">
       <!-- <img src="superm/img2.jpeg" alt=""> -->
-      <form action="#" method="post">
-        <h2>
-          Datos personales
-        </h2>
+      <form id="registerForm">
+        <h2>Datos personales</h2>
         <fieldset>
-          <legend class="legend-registrate"> Registrate</legend>
-          <div class="form-input">
-            <label for="inputNombre">Nombre</label>
-            <input type="text" required minlength="3" id="inputNombre" placeholder="Nombre Completo" required
-              name="nombreCompleto">
-          </div>
-          <div class="form-input">
-            <label for="inputEmail">email</label>
-            <input type="email" id="inputEmail" placeholder="email" required name="emailCompleto">
-          </div>
-          <div class="form-input">
-            <label for="inputFecha">Fecha</label>
-            <input type="date" id="inputFecha" required name="fechaCompleto">
-          </div>
-          <div class="form-input">
-            <label for="">Tipos de usuarios</label>
-            <select name="type-of-user" id="">
-              <option value="user1">cliente tipo a</option>
-              <option value="user1">cliente tipo b</option>
-            </select>
-          </div>
-          <div class="form-input">
-            <label for="mensaje">Mensaje</label>
-            <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
-          </div>
-          <div class="form-input">
-            <label> Acepto los terminos y condiciones
-              <input type="checkbox" class="checkbox">
-            </label>
-          </div>
+            <legend class="legend-registrate">Registrate</legend>
+            <div class="form-input">
+                <label for="inputNombre">Nombre</label>
+                <input type="text" required minlength="3" id="inputNombre" placeholder="Nombre Completo" required name="nombreCompleto">
+            </div>
+            <div class="form-input">
+                <label for="inputEmail">Email</label>
+                <input type="email" id="inputEmail" placeholder="Email" required name="emailCompleto">
+            </div>
+            <div class="form-input">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" id="inputPassword" placeholder="Email" required name="passwordCompleta">
+            </div>
+            <div class="form-input">
+                <label for="inputFecha">Fecha de Nacimiento</label>
+                <input type="date" id="inputFecha" required name="fechaCompleto">
+            </div>
+            <div class="form-input">
+                <label for="inputTipoUsuario">Tipos de usuarios</label>
+                <select name="type-of-user" id="inputTipoUsuario">
+                    <option value="user1">Cliente tipo A</option>
+                    <option value="user1">Cliente tipo B</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="mensaje">Mensaje</label>
+                <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </div>
+            <div class="form-input">
+                <label> Acepto los términos y condiciones
+                    <input type="checkbox" class="checkbox" required>
+                </label>
+            </div>
         </fieldset>
-        <input class="btn" type="submit">
-      </form>
+        <button class="btn" type="button" onclick="registerUser()">Registrar</button>
+    </form>
     </div>
   </main>
+  <script src="../js/registro.js"></script>
 </body>
 
 </html>

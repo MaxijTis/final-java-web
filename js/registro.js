@@ -3,15 +3,12 @@ async function registerUser() {
     const emailCompleto = document.getElementById('inputEmail').value;
     const passwordCompleta = document.getElementById('inputPassword').value;
     const fechaCompleto = document.getElementById('inputFecha').value;
-    const tipoUsuario = document.getElementById('inputTipoUsuario').value;
 
     const userData = {
-        id: 0,
         name: nombreCompleto,
         email: emailCompleto,
         password: passwordCompleta,
         birthdate: fechaCompleto,
-        type: tipoUsuario
     };
 
     try {

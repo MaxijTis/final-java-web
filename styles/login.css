@@ -1,16 +1,31 @@
-body{
-    background-image: url("https://img.freepik.com/fotos-premium/comercio-linea-tecnologia-marketing-moderna-carrito-supermercado-fondo-oscuro-ai-generado_868611-5804.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.form-login{
-    background-color: #ffff;
-    border-radius: 10px;
-    padding: 30px;
-    width: 50%;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
 }
 
-.error{
-    color: #ff0000;
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://www.msetconf.org/wp-content/uploads/2018/10/Web-Page-Background-Color.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+form{
+    width: 800px;
+    margin: 80px;
+    padding: 50px;
+    background-color: #df7a1c5b;
+    border-radius: 30px;
+  }
+  
+  .form-control{
+    width: 600px;
+  }
+  
+  .mb-3{
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+  }

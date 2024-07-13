@@ -1,0 +1,6 @@
+
+,Web:MouseEventWithoutKeyboardEquivalentCheck$"?Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <a> tag.(™μισJ$f98ef40d-df36-4606-b744-76094cbefecc
+™	Web:S6819$"^Use <button> or <input> instead of the button role to ensure accessibility across all devices.(™μισJ$2ea11f59-d585-4fb2-a941-5bdd9b1d362b
+j	Web:S1827m"/Remove this deprecated "frameborder" attribute.(έέÿ½J$e8ba3cee-793d-4e92-8da8-a28089722d7f
+h	Web:S1827m"-Remove this deprecated "scrolling" attribute.(έέÿ½J$e4fd818b-51f2-4c83-960f-dd38ab35009a
+yWeb:FrameWithoutTitleCheckm"-Add a "title" attribute to this <iframe> tag.(έέÿ½J$5b6aaca8-3d65-44eb-a5b3-db4b469dd2a9
